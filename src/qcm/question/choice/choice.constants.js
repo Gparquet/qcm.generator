@@ -1,7 +1,7 @@
 export default {
-  fieldInformation:{
+  fieldInformation: {
     label: 'Choices',
     name: 'choice',
     id: 'question_choice',
-  }
+  },
 };
