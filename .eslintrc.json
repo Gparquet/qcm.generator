@@ -1,28 +1,66 @@
 {
-  "extends": "airbnb",
-  "env": {
-    "jest": true
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
   },
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  },
+  "plugins": ["@typescript-eslint", "react-hooks", "jest", "prettier"],
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint", "plugin:prettier/recommended"],
   "rules": {
     "linebreak-style": ["error", "windows"],
-    "react/jsx-filename-extension": [
-      1,
+    /**
+     * @description rules of eslint official
+     */
+    /**
+     * @bug https://github.com/benmosher/eslint-plugin-import/issues/1282
+     * "import/named" temporary disable.
+     */
+    "import/named": "off",
+    /**
+     * @bug?
+     * "import/export" temporary disable.
+     */
+    "import/export": "off",
+    "import/prefer-default-export": "off", // Allow single Named-export
+    "no-unused-expressions": [
+      "warn",
       {
-        "extensions": [".js", ".jsx"]
+        "allowShortCircuit": true,
+        "allowTernary": true
       }
-    ],
-    "object-curly-newline": [
+    ], // https://eslint.org/docs/rules/no-unused-expressions
+    /**
+     * @description rules of @typescript-eslint
+     */
+    "@typescript-eslint/prefer-interface": "off", // also want to use "type"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    // annoying to force return type
+    /**
+     * @description rules of eslint-plugin-react
+     */
+    "react/jsx-filename-extension": [
+      "info",
+      {
+        "extensions": ["js", ".jsx", ".tsx"]
+      }
+    ], // also want to use with ".tsx"
+    "react/prop-types": "off", // Is this incompatible with TS props type?
+    /**
+     * @description rules of eslint-plugin-react-hooks
+     */
+    "react-hooks/rules-of-hooks": "error",
+    /**
+     * @description rules of eslint-plugin-prettier
+     */
+    "prettier/prettier": [
       "error",
       {
-        "ObjectExpression": "always",
-        "ObjectPattern": {
-          "multiline": true
-        },
-        "ImportDeclaration": "never",
-        "ExportDeclaration": {
-          "multiline": true,
-          "minProperties": 3
-        }
+        "singleQuote": true,
+        "semi": true
       }
     ]
   }
