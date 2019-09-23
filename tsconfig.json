@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "typeRoots": ["@types"],
-    "rootDirs": ["src", "./src/**/*.stories.tsx"],
+    "rootDirs": ["src", "src/**.stories.tsx"],
     "noImplicitAny": true,
     "module": "es6",
     "moduleResolution": "node",

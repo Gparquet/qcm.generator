@@ -2,48 +2,39 @@ import React, {SFC, FormEvent, ReactNode} from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-//import {string, func, arrayOf, shape} from 'prop-types';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
 
-// const propTypes = {
-//   label: string.isRequired,
-//   name: string.isRequired,
-//   choices: arrayOf(
-//     shape({
-//       label: string.isRequired,
-//       value: string.isRequired,
-//     }),
-//   ).isRequired,
-//   onChange: func.isRequired,
-// };
-
-type test = {
+type ChoiceComponentType = {
   choices: {label: string; value: string}[];
   onChange: (event: React.ChangeEvent<{}>, value: string) => void;
-  label: string;
-  name: string;
+  label?: string;
+  name?: string;
+  defaultValue?: string;
 };
 
-const choiceComponent: SFC<test> = props => {
-  const {choices, onChange, label, name} = props;
+const ChoiceComponent: SFC<ChoiceComponentType> = props => {
+  const {choices, onChange, label, name, defaultValue} = props;
 
   return (
-    <RadioGroup
-      aria-label={label}
-      name={name}
-      value="Female"
-      onChange={onChange}
-    >
-      {choices.map(currentChoice => (
-        <FormControlLabel
-          value={currentChoice.value}
-          control={<Radio />}
-          label={currentChoice.label}
-        />
-      ))}
-    </RadioGroup>
+    <FormControl>
+      <FormLabel>{label}</FormLabel>
+      <RadioGroup
+        aria-label={label}
+        name={name}
+        value={defaultValue}
+        onChange={onChange}
+      >
+        {choices.map(currentChoice => (
+          <FormControlLabel
+            value={currentChoice.value}
+            control={<Radio />}
+            label={currentChoice.label}
+          />
+        ))}
+      </RadioGroup>
+    </FormControl>
   );
 };
 
-//choiceComponent.propTypes = propTypes;
-
-export default choiceComponent;
+export default ChoiceComponent;

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Question Component renders correctly 1`] = `
+exports[`Question Component renders correctly question component with singleChoice select component 1`] = `
 <div
-  className="MuiPaper-root-2 MuiPaper-elevation1-5 MuiPaper-rounded-3 questionComponent-root-1"
+  className="MuiPaper-root-2 MuiPaper-elevation1-5 MuiPaper-rounded-3 QuestionComponent-root-1"
 >
   <h3
     className="MuiTypography-root-29 MuiTypography-h5-45"
@@ -14,5 +14,272 @@ exports[`Question Component renders correctly 1`] = `
   >
     Label of question
   </p>
+  <div
+    className="MuiFormControl-root-65"
+  >
+    <label
+      className="MuiFormLabel-root-69"
+    />
+    <div
+      className="MuiFormGroup-root-76"
+      role="radiogroup"
+    >
+      <label
+        className="MuiFormControlLabel-root-78"
+      >
+        <span
+          className="MuiButtonBase-root-99 MuiIconButton-root-93 MuiPrivateSwitchBase-root-89 MuiRadio-root-84 MuiRadio-colorSecondary-88"
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-98"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-102"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <input
+              checked={false}
+              className="MuiPrivateSwitchBase-input-92"
+              disabled={false}
+              onChange={[Function]}
+              type="radio"
+              value="5f67c896-77b4-4b9b-bf19-fb2c8e274c68"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-111"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiFormControlLabel-label-83"
+        >
+          Internal
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root-78"
+      >
+        <span
+          className="MuiButtonBase-root-99 MuiIconButton-root-93 MuiPrivateSwitchBase-root-89 MuiRadio-root-84 MuiRadio-colorSecondary-88"
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-98"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-102"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <input
+              checked={false}
+              className="MuiPrivateSwitchBase-input-92"
+              disabled={false}
+              onChange={[Function]}
+              type="radio"
+              value="8762b6dc-9fe3-4c5d-b810-2030e6b36fb5"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-111"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiFormControlLabel-label-83"
+        >
+          Virtual
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root-78"
+      >
+        <span
+          className="MuiButtonBase-root-99 MuiIconButton-root-93 MuiPrivateSwitchBase-root-89 MuiRadio-root-84 MuiRadio-colorSecondary-88"
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-98"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-102"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <input
+              checked={false}
+              className="MuiPrivateSwitchBase-input-92"
+              disabled={false}
+              onChange={[Function]}
+              type="radio"
+              value="b4d2d5e5-7ece-4dbd-b375-67389b7c4f84"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-111"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiFormControlLabel-label-83"
+        >
+          Override
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root-78"
+      >
+        <span
+          className="MuiButtonBase-root-99 MuiIconButton-root-93 MuiPrivateSwitchBase-root-89 MuiRadio-root-84 MuiRadio-colorSecondary-88"
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-98"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-102"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <input
+              checked={false}
+              className="MuiPrivateSwitchBase-input-92"
+              disabled={false}
+              onChange={[Function]}
+              type="radio"
+              value="72010226-6d1f-4354-b57d-15953292dbd6"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-111"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiFormControlLabel-label-83"
+        >
+          Sealed
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root-78"
+      >
+        <span
+          className="MuiButtonBase-root-99 MuiIconButton-root-93 MuiPrivateSwitchBase-root-89 MuiRadio-root-84 MuiRadio-colorSecondary-88"
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-98"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-102"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <input
+              checked={false}
+              className="MuiPrivateSwitchBase-input-92"
+              disabled={false}
+              onChange={[Function]}
+              type="radio"
+              value="72010226-6d1f-4354-b57d-15953292dbd6"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-111"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-29 MuiTypography-body1-38 MuiFormControlLabel-label-83"
+        >
+          I don't know
+        </span>
+      </label>
+    </div>
+  </div>
 </div>
 `;

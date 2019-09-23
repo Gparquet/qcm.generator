@@ -1,9 +1,6 @@
 import {configure} from '@storybook/react';
+import requireContext from 'require-context.macro';
 
-function loadStories() {
-  //require('../src/qcm/question/question.component.stories');
-  require('../src/qcm/question/choice/choice.component.stories.tsx');
-  // You can require as many stories as you need.
-}
+const req = requireContext('../src', true, /\.stories\.tsx$/);
 
-configure(loadStories, module);
+configure(() => req.keys().forEach(filename => req(filename)), module);

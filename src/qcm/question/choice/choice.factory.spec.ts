@@ -7,6 +7,6 @@ describe('choice factory tests', () => {
     const choiceFormattedResult = choiceFactory.formatChoiceStructureForComponent(
       choicesNotFormatted,
     );
-    expect(choiceFormattedResult).toEqual(choicesFormatted);
+    expect(choiceFormattedResult).toEqual(choicesFormatted.choices);
   });
 });

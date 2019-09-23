@@ -1,25 +1,52 @@
-import React from 'react';
-import {shape, string} from 'prop-types';
-import {withStyles} from '@material-ui/core/styles';
+import React, {SFC} from 'react';
+import {withStyles, Theme, createStyles} from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import {Choice, ChoiceComponent} from './choice';
+import {MultipleChoice, MultipleChoiceComponent} from './multipleChoice';
 
-const propTypes = {
-  classes: shape().isRequired,
-  title: string.isRequired,
-  label: string.isRequired,
+const styles = (theme: Theme) =>
+  createStyles({
+    root: {
+      ...theme.mixins.gutters(),
+      paddingTop: theme.spacing.unit * 2,
+      paddingBottom: theme.spacing.unit * 2,
+    },
+  });
+
+type QuestionComponentType = {
+  classes: any;
+  title: string;
+  label: string;
+  objectChoice:
+    | {type: string; choices: Choice[]}
+    | {type: string; choices: MultipleChoice[]};
+  onChange: (event: React.ChangeEvent<{}>, value: boolean | string) => void;
 };
 
-const styles = theme => ({
-  root: {
-    ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2,
-  },
-});
+type MultipleOrSingleChoiceType = {
+  choices: Choice[] | MultipleChoice[];
+  type: string;
+  onChange: (event: React.ChangeEvent<{}>, value: boolean | string) => void;
+};
 
-const questionComponent = props => {
-  const {classes, title, label} = props;
+const MultipleOrSingleChoice: SFC<MultipleOrSingleChoiceType> = props => {
+  const {type, choices, onChange} = props;
+  if (type !== 'simpleChoice') {
+    return (
+      <MultipleChoiceComponent
+        onChange={onChange}
+        choices={choices as MultipleChoice[]}
+      />
+    );
+  }
+
+  return <ChoiceComponent onChange={onChange} choices={choices} />;
+};
+
+const QuestionComponent: SFC<QuestionComponentType> = props => {
+  const {classes, title, label, objectChoice, onChange} = props;
+  const {choices, type} = objectChoice;
   return (
     <>
       <Paper className={classes.root} elevation={1}>
@@ -27,10 +54,14 @@ const questionComponent = props => {
           {title}
         </Typography>
         <Typography component="p">{label}</Typography>
+        <MultipleOrSingleChoice
+          choices={choices}
+          type={type}
+          onChange={onChange}
+        />
       </Paper>
     </>
   );
 };
 
-questionComponent.propTypes = propTypes;
-export default withStyles(styles)(questionComponent);
+export default withStyles(styles)(QuestionComponent);

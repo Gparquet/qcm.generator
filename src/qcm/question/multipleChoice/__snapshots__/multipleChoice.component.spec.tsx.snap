@@ -7,18 +7,16 @@ exports[`Choice Component renders correctly 1`] = `
   <label
     className="MuiFormLabel-root-5"
   >
-    Choices
+    multiple choice
   </label>
   <div
-    aria-label="Choices"
     className="MuiFormGroup-root-12"
-    role="radiogroup"
   >
     <label
       className="MuiFormControlLabel-root-14"
     >
       <span
-        className="MuiButtonBase-root-35 MuiIconButton-root-29 MuiPrivateSwitchBase-root-25 MuiRadio-root-20 MuiRadio-colorSecondary-24"
+        className="MuiButtonBase-root-36 MuiIconButton-root-30 MuiPrivateSwitchBase-root-26 MuiCheckbox-root-20 MuiCheckbox-colorSecondary-25"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
@@ -33,35 +31,35 @@ exports[`Choice Component renders correctly 1`] = `
         tabIndex={null}
       >
         <span
-          className="MuiIconButton-label-34"
+          className="MuiIconButton-label-35"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-38"
+            className="MuiSvgIcon-root-39"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
             />
           </svg>
           <input
             checked={false}
-            className="MuiPrivateSwitchBase-input-28"
+            className="MuiPrivateSwitchBase-input-29"
+            data-indeterminate={false}
             disabled={false}
-            name="choice"
             onChange={[Function]}
-            type="radio"
+            type="checkbox"
             value="5f67c896-77b4-4b9b-bf19-fb2c8e274c68"
           />
         </span>
         <span
-          className="MuiTouchRipple-root-83"
+          className="MuiTouchRipple-root-92"
         />
       </span>
       <span
-        className="MuiTypography-root-47 MuiTypography-body1-56 MuiFormControlLabel-label-19"
+        className="MuiTypography-root-48 MuiTypography-body1-57 MuiFormControlLabel-label-19"
       >
         Internal
       </span>
@@ -70,7 +68,7 @@ exports[`Choice Component renders correctly 1`] = `
       className="MuiFormControlLabel-root-14"
     >
       <span
-        className="MuiButtonBase-root-35 MuiIconButton-root-29 MuiPrivateSwitchBase-root-25 MuiRadio-root-20 MuiRadio-colorSecondary-24"
+        className="MuiButtonBase-root-36 MuiIconButton-root-30 MuiPrivateSwitchBase-root-26 MuiCheckbox-root-20 MuiCheckbox-colorSecondary-25"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
@@ -85,35 +83,35 @@ exports[`Choice Component renders correctly 1`] = `
         tabIndex={null}
       >
         <span
-          className="MuiIconButton-label-34"
+          className="MuiIconButton-label-35"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-38"
+            className="MuiSvgIcon-root-39"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
             />
           </svg>
           <input
             checked={false}
-            className="MuiPrivateSwitchBase-input-28"
+            className="MuiPrivateSwitchBase-input-29"
+            data-indeterminate={false}
             disabled={false}
-            name="choice"
             onChange={[Function]}
-            type="radio"
+            type="checkbox"
             value="8762b6dc-9fe3-4c5d-b810-2030e6b36fb5"
           />
         </span>
         <span
-          className="MuiTouchRipple-root-83"
+          className="MuiTouchRipple-root-92"
         />
       </span>
       <span
-        className="MuiTypography-root-47 MuiTypography-body1-56 MuiFormControlLabel-label-19"
+        className="MuiTypography-root-48 MuiTypography-body1-57 MuiFormControlLabel-label-19"
       >
         Virtual
       </span>
@@ -122,7 +120,7 @@ exports[`Choice Component renders correctly 1`] = `
       className="MuiFormControlLabel-root-14"
     >
       <span
-        className="MuiButtonBase-root-35 MuiIconButton-root-29 MuiPrivateSwitchBase-root-25 MuiRadio-root-20 MuiRadio-colorSecondary-24"
+        className="MuiButtonBase-root-36 MuiIconButton-root-30 MuiPrivateSwitchBase-root-26 MuiCheckbox-root-20 MuiCheckbox-colorSecondary-25 MuiPrivateSwitchBase-checked-27 MuiCheckbox-checked-21"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
@@ -137,35 +135,35 @@ exports[`Choice Component renders correctly 1`] = `
         tabIndex={null}
       >
         <span
-          className="MuiIconButton-label-34"
+          className="MuiIconButton-label-35"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-38"
+            className="MuiSvgIcon-root-39"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
             />
           </svg>
           <input
-            checked={false}
-            className="MuiPrivateSwitchBase-input-28"
+            checked={true}
+            className="MuiPrivateSwitchBase-input-29"
+            data-indeterminate={false}
             disabled={false}
-            name="choice"
             onChange={[Function]}
-            type="radio"
+            type="checkbox"
             value="b4d2d5e5-7ece-4dbd-b375-67389b7c4f84"
           />
         </span>
         <span
-          className="MuiTouchRipple-root-83"
+          className="MuiTouchRipple-root-92"
         />
       </span>
       <span
-        className="MuiTypography-root-47 MuiTypography-body1-56 MuiFormControlLabel-label-19"
+        className="MuiTypography-root-48 MuiTypography-body1-57 MuiFormControlLabel-label-19"
       >
         Override
       </span>
@@ -174,7 +172,7 @@ exports[`Choice Component renders correctly 1`] = `
       className="MuiFormControlLabel-root-14"
     >
       <span
-        className="MuiButtonBase-root-35 MuiIconButton-root-29 MuiPrivateSwitchBase-root-25 MuiRadio-root-20 MuiRadio-colorSecondary-24"
+        className="MuiButtonBase-root-36 MuiIconButton-root-30 MuiPrivateSwitchBase-root-26 MuiCheckbox-root-20 MuiCheckbox-colorSecondary-25"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
@@ -189,35 +187,35 @@ exports[`Choice Component renders correctly 1`] = `
         tabIndex={null}
       >
         <span
-          className="MuiIconButton-label-34"
+          className="MuiIconButton-label-35"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-38"
+            className="MuiSvgIcon-root-39"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
             />
           </svg>
           <input
             checked={false}
-            className="MuiPrivateSwitchBase-input-28"
+            className="MuiPrivateSwitchBase-input-29"
+            data-indeterminate={false}
             disabled={false}
-            name="choice"
             onChange={[Function]}
-            type="radio"
+            type="checkbox"
             value="72010226-6d1f-4354-b57d-15953292dbd6"
           />
         </span>
         <span
-          className="MuiTouchRipple-root-83"
+          className="MuiTouchRipple-root-92"
         />
       </span>
       <span
-        className="MuiTypography-root-47 MuiTypography-body1-56 MuiFormControlLabel-label-19"
+        className="MuiTypography-root-48 MuiTypography-body1-57 MuiFormControlLabel-label-19"
       >
         Sealed
       </span>
@@ -226,7 +224,7 @@ exports[`Choice Component renders correctly 1`] = `
       className="MuiFormControlLabel-root-14"
     >
       <span
-        className="MuiButtonBase-root-35 MuiIconButton-root-29 MuiPrivateSwitchBase-root-25 MuiRadio-root-20 MuiRadio-colorSecondary-24"
+        className="MuiButtonBase-root-36 MuiIconButton-root-30 MuiPrivateSwitchBase-root-26 MuiCheckbox-root-20 MuiCheckbox-colorSecondary-25"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
@@ -241,39 +239,44 @@ exports[`Choice Component renders correctly 1`] = `
         tabIndex={null}
       >
         <span
-          className="MuiIconButton-label-34"
+          className="MuiIconButton-label-35"
         >
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-38"
+            className="MuiSvgIcon-root-39"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
             />
           </svg>
           <input
             checked={false}
-            className="MuiPrivateSwitchBase-input-28"
+            className="MuiPrivateSwitchBase-input-29"
+            data-indeterminate={false}
             disabled={false}
-            name="choice"
             onChange={[Function]}
-            type="radio"
+            type="checkbox"
             value="72010226-6d1f-4354-b57d-15953292dbd6"
           />
         </span>
         <span
-          className="MuiTouchRipple-root-83"
+          className="MuiTouchRipple-root-92"
         />
       </span>
       <span
-        className="MuiTypography-root-47 MuiTypography-body1-56 MuiFormControlLabel-label-19"
+        className="MuiTypography-root-48 MuiTypography-body1-57 MuiFormControlLabel-label-19"
       >
         I don't know
       </span>
     </label>
   </div>
+  <p
+    className="MuiFormHelperText-root-84"
+  >
+    Be careful
+  </p>
 </div>
 `;
