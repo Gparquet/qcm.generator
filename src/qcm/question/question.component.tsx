@@ -1,9 +1,10 @@
-import React, {SFC} from 'react';
+import React, {SFC, ChangeEvent} from 'react';
 import {withStyles, Theme, createStyles} from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import {Choice, ChoiceComponent} from './choice';
 import {MultipleChoice, MultipleChoiceComponent} from './multipleChoice';
+import {QuestionComponentType} from './question.type';
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -14,20 +15,10 @@ const styles = (theme: Theme) =>
     },
   });
 
-type QuestionComponentType = {
-  classes: any;
-  title: string;
-  label: string;
-  objectChoice:
-    | {type: string; choices: Choice[]}
-    | {type: string; choices: MultipleChoice[]};
-  onChange: (event: React.ChangeEvent<{}>, value: boolean | string) => void;
-};
-
 type MultipleOrSingleChoiceType = {
   choices: Choice[] | MultipleChoice[];
   type: string;
-  onChange: (event: React.ChangeEvent<{}>, value: boolean | string) => void;
+  onChange: (event: ChangeEvent<{}>, value: boolean | string) => void;
 };
 
 const MultipleOrSingleChoice: SFC<MultipleOrSingleChoiceType> = props => {

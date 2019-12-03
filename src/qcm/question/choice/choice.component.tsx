@@ -1,4 +1,4 @@
-import React, {SFC, FormEvent, ReactNode} from 'react';
+import React, {SFC} from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -25,13 +25,17 @@ const ChoiceComponent: SFC<ChoiceComponentType> = props => {
         value={defaultValue}
         onChange={onChange}
       >
-        {choices.map(currentChoice => (
-          <FormControlLabel
-            value={currentChoice.value}
-            control={<Radio />}
-            label={currentChoice.label}
-          />
-        ))}
+        {choices.map(currentChoice => {
+          const {label, value} = currentChoice;
+          return (
+            <FormControlLabel
+              key={`singleChoice_${label}_${value}`}
+              value={value}
+              control={<Radio />}
+              label={label}
+            />
+          );
+        })}
       </RadioGroup>
     </FormControl>
   );

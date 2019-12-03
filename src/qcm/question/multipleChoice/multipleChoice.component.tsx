@@ -11,28 +11,32 @@ type MultiChoiceComponentType = {
   choices: MultipleChoice[];
   onChange: (event: React.ChangeEvent<{}>, value: boolean) => void;
   label?: string;
+  defaultValueSelected: string;
 };
 
 const multipleChoiceComponent: SFC<MultiChoiceComponentType> = props => {
-  const {choices, onChange, label} = props;
+  const {choices, onChange, label, defaultValueSelected} = props;
 
   return (
     <FormControl>
       <FormLabel>{label}</FormLabel>
       <FormGroup>
-        {choices.map(currentChoice => (
-          <FormControlLabel
-            key={`formControlLabel_${currentChoice.value}`}
-            control={
-              <Checkbox
-                checked={currentChoice.selected}
-                onChange={onChange}
-                value={currentChoice.value}
-              />
-            }
-            label={currentChoice.label}
-          />
-        ))}
+        {choices.map(currentChoice => {
+          const {selected, label, value} = currentChoice;
+          return (
+            <FormControlLabel
+              key={`formControlLabel_${label}`}
+              control={
+                <Checkbox
+                  checked={selected}
+                  onChange={onChange}
+                  value={value}
+                />
+              }
+              label={label}
+            />
+          );
+        })}
       </FormGroup>
       <FormHelperText>Be careful</FormHelperText>
     </FormControl>

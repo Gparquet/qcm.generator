@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "typeRoots": ["@types"],
-    "rootDirs": ["src", "src/**.stories.tsx"],
+    "rootDirs": ["src", "src/**.stories.tsx", "src/**.spec.tsx"],
     "noImplicitAny": true,
     "module": "es6",
     "moduleResolution": "node",
@@ -11,7 +11,8 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": ["test-jest"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build", "scripts"]

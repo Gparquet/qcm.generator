@@ -8,7 +8,7 @@ import MultipleChoiceComponent from './multipleChoice.component';
 const props = {
   id: 'multipleChoice',
   label: 'multiple choice',
-  choices: multipleChoiceFormatted,
+  choices: multipleChoiceFormatted.choices,
   defaultChoice: '5f67c896-77b4-4b9b-bf19-fb2c8e274c68',
 };
 

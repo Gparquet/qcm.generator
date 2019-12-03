@@ -8,7 +8,7 @@ describe('Choice Component', () => {
     id: 'multipleChoice',
     label: 'multiple choice',
     choices: multipleChoiceFormatted.choices,
-    defaultChoice: '5f67c896-77b4-4b9b-bf19-fb2c8e274c68',
+    defaultValueSelected: '5f67c896-77b4-4b9b-bf19-fb2c8e274c68',
     onChange: () => {},
   };
   test('renders correctly', () => {
